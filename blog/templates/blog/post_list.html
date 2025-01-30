@@ -8,10 +8,12 @@
             <h1><a href="/">Django Girls Blog</a></h1>
         </header>
 
-        <article>
+    {% for post in posts %}
+       <article>
             <time>published: 29.01.2025, 22:10</time>
             <h2><a href="">My First Post</a></h2>
             <P> Eu estou postando isso enquanto os meninos dormem e o Estevão me espera na sala, to bem cansada e com sono mããs to feliz e orgulhosa, realizada também, é difícil ser mãe moderna.</P>
-        </article>
+       </article>
+    {%endfor %}
    </body>
 </html>
